@@ -28,8 +28,9 @@ public class AuthorizationServerConfig  extends AuthorizationServerConfigurerAda
 		.withClient("angular")
 		.secret("@ngul@r0")
 		.scopes("read", "write")
-		.authorizedGrantTypes("password")
-		.accessTokenValiditySeconds(1800);
+		.authorizedGrantTypes("password", "refresh_token")
+		.accessTokenValiditySeconds(10)
+		.refreshTokenValiditySeconds(3600*24);
 	}
 	
 	/**
@@ -39,6 +40,7 @@ public class AuthorizationServerConfig  extends AuthorizationServerConfigurerAda
 	public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
 		endpoints.tokenStore(tokenStore())
 		.accessTokenConverter(accessTokenConverter())
+		.reuseRefreshTokens(false)
 		.authenticationManager(authenticationManager);
 	}
 	
