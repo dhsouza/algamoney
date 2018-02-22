@@ -7,3 +7,5 @@
 target/
 RemoteSystemsTempFiles/
 Servers/
+.idea
+*.iml
