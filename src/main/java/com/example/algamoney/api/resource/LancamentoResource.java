@@ -6,7 +6,7 @@ import java.util.List;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 
-import com.example.algamoney.api.projection.ResumoLancamento;
+import com.example.algamoney.api.repository.projection.ResumoLancamento;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.MessageSource;

@@ -13,7 +13,7 @@ import javax.persistence.criteria.Root;
 
 import com.example.algamoney.api.model.Categoria_;
 import com.example.algamoney.api.model.Pessoa_;
-import com.example.algamoney.api.projection.ResumoLancamento;
+import com.example.algamoney.api.repository.projection.ResumoLancamento;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;

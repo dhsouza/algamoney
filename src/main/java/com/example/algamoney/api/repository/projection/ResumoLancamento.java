@@ -1,4 +1,4 @@
-package com.example.algamoney.api.projection;
+package com.example.algamoney.api.repository.projection;
 
 import com.example.algamoney.api.model.TipoLancamento;
 

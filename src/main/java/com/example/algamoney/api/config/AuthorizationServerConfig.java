@@ -59,7 +59,6 @@ public class AuthorizationServerConfig  extends AuthorizationServerConfigurerAda
 		endpoints
 			.tokenStore(tokenStore())
 			.tokenEnhancer(tokenEnhacerChain)
-			.accessTokenConverter(accessTokenConverter())
 			.reuseRefreshTokens(false)
 			.authenticationManager(authenticationManager);
 	}
